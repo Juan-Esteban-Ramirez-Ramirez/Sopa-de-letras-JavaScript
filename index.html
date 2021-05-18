@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+  <title>ALPHABET SOUP</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+    <script type="text/javascript" src="busquedapalabras.js"></script> 
+    <script type="text/javascript" src="juegopalabras.js"></script> 
+    <link rel="shortcut icon" href="icono/logo.png" type="image/x-icon">
+</head>
+<body>
+    <p>Selecciona las palabras haciendo click izquierdo sostenido y con el botón en la parte inferior puedes ver la solución.</p>
+    <div id='Pasatiempo'></div>
+    <div id='Término'></div>
+    
+    <div><button id='solve'>DESCIFRAR</button></div>
+    <script>
+    var words = ['article','aside','body','caption','div','footer','header', 'input', 'dialog', 'keygen', 'menu', 'meta', 'progress', 'section', 'script', 'small', 'source', 'span', 'strong', 'style'];
+
+    var gamePuzzle = wordfindgame.create(words, '#Pasatiempo', '#Término'); 
+        
+    var puzzle = wordfind.newPuzzle(words,{height: 48, width: 48, fillBlanks: false});
+    wordfind.print(puzzle);   
+        
+    $('#solve').click( function() {wordfindgame.solve(gamePuzzle, words);});
+        
+    </script>
+
+
+    
+</body>
+
+</html>

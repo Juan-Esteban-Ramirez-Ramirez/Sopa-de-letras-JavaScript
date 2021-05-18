@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    background: #FFFACD;
+    
+}
+
+
+p {
+    font: 15pt "Syne Mono";
+    margin: 20px 20px 0px 20px;
+  }
+  
+
+  #Pasatiempo {
+    border: 2px solid blue;
+    padding: 20px;
+    float: left;
+    margin: 50px 80px;
+  }
+  
+  #Pasatiempo div {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  
+  #Pasatiempo .puzzleSquare {
+    height: 40px;
+    width: 40px;
+    text-transform: uppercase;
+    background-color: white;
+    border-collapse: collapse;
+    font: 1.2em "Syne Mono";
+    font-weight: 600;
+  }
+  
+ 
+  #Pasatiempo .selected {
+    background-color: blue;
+  }
+  
+
+  #Pasatiempo .found {
+    background-color: rgb(255, 0, 34);
+    color: white;
+  }
+  
+  #Pasatiempo .solved {
+    background-color: yellow;
+    color: black;
+  }
+  
+
+  #Término {
+    padding: 40px 0px 40px 40px;
+    column-count: 2;
+    width: 400px;
+    font-weight: 900;
+    
+  }
+  
+  #Término ul {
+   list-style-type: circle;
+
+  }
+  
+  #Término li {
+    padding: 10px 0;
+    font: 1.2em "Syne Mono";
+    font-weight: 600;
+  }
+  
+ 
+  #Término .wordFound {
+    text-decoration: line-through;
+    color: rgb(237, 19, 19);
+  }
+  
+
+  #solve {
+    margin: 0 15px;
+    font: 1.2em "Syne Mono";
+    border-radius: 5px;
+    width: 25%;
+    color: black;
+    font-weight: 600;
+    background-color:#87CEFA;
+    
+  }
+
+ 
+
+  
